@@ -1,0 +1,100 @@
+/* ShoreSquad Colour Palette */
+:root {
+  --ocean-blue: #2196F3;
+  --sand-yellow: #FFEB3B;
+  --coral: #FF7043;
+  --seafoam-green: #26A69A;
+  --white: #FFFFFF;
+  --charcoal: #263238;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--white);
+  color: var(--charcoal);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--ocean-blue);
+  color: var(--white);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:focus, nav a:hover {
+  color: var(--sand-yellow);
+  outline: 2px solid var(--coral);
+}
+
+#hero {
+  background: linear-gradient(90deg, var(--ocean-blue) 60%, var(--seafoam-green) 100%);
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#join-btn {
+  background: var(--coral);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+#join-btn:hover, #join-btn:focus {
+  background: var(--sand-yellow);
+  color: var(--charcoal);
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+#map-container, #weather-info, #crew-list, #events-list {
+  min-height: 120px;
+  background: var(--seafoam-green);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  color: var(--white);
+}
+
+footer {
+  background: var(--charcoal);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #hero {
+    padding: 1rem 0.5rem;
+  }
+}
